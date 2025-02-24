@@ -4,7 +4,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officiis conse
 
 ## Lorem Ipsum
 
-| Author | URL | Source | Tech Stack |
+| Author | Live | Source | Tech Stack |
 | ------ | --- | ------ | ---------- |
 | Odhy Pradhana | [odhyp.com](https://odhyp.com/) | [GitHub](https://github.com/odhyp/odhyp.com) | Hugo, TailwindCSS, JavaScript, Vercel |
 | John Doe | [johndoe.com](https://johndoe.com) | [GitHub](https://github.com/johndoe/johndoe.com) | NextJS, TailwindCSS, Vercel |
