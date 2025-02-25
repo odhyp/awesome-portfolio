@@ -32,7 +32,7 @@ jobs:
           if ! git diff --quiet; then
             git add data/
             git commit -m "chore: update portfolio data"
-            git push
+            git push origin master
           else
             echo "No changes to commit."
           fi
