@@ -1,0 +1,40 @@
+[
+    {
+        "author": "Odhy Pradhana",
+        "liveName": "odhyp.com",
+        "liveUrl": "https://odhyp.com/",
+        "sourceName": "GitHub",
+        "sourceUrl": "https://github.com/odhyp/odhyp.com",
+        "techStack": [
+            "Hugo",
+            "TailwindCSS",
+            "JavaScript",
+            "Vercel"
+        ]
+    },
+    {
+        "author": "John Doe",
+        "liveName": "johndoe.com",
+        "liveUrl": "https://johndoe.com",
+        "sourceName": "GitHub",
+        "sourceUrl": "https://github.com/johndoe/johndoe.com",
+        "techStack": [
+            "NextJS",
+            "TailwindCSS",
+            "Vercel"
+        ]
+    },
+    {
+        "author": "Jane Doe",
+        "liveName": "janedoe.com",
+        "liveUrl": "https://janedoe.com",
+        "sourceName": "GitHub",
+        "sourceUrl": "https://github.com/janedoe/janedoe.com",
+        "techStack": [
+            "React",
+            "TypeScripts",
+            "TailwindCSS",
+            "Netlify"
+        ]
+    }
+]
