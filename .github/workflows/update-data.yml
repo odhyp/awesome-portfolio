@@ -26,6 +26,12 @@ jobs:
       - name: Run update-data script
         run: python src/update_data.py
 
+      - name: Debug Git Status
+        run: |
+          git status
+          ls -lah data/
+          cat data/portfolio.json || echo "File not found"
+
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
