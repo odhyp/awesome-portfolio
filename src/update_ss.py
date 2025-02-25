@@ -15,9 +15,12 @@ def take_screenshot(url: str, output_path: str):
             browser.close()
 
 
-# FIXME: Don't run it here, move it to main.py instead.
 def main():
-    url = "https://odhyp.com"
+    url = "https://antfu.me/"
     output_path = "screenshot.png"
 
     take_screenshot(url, output_path)
+
+
+if __name__ == "__main__":
+    main()
