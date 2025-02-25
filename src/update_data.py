@@ -56,8 +56,6 @@ def save_to_json(data: dict, output_file: str):
         json.dump(data, f, indent=4)
 
 
-# FIXME: Don't run it here, move it to main.py instead.
-# DEV TEMPORARY
 def main():
     markdown_file = "README.md"
     output_json = "data/portfolio.json"
@@ -69,3 +67,7 @@ def main():
 
     except Exception as e:
         print(f"Error: {e}")
+
+
+if __name__ == "__main__":
+    main()
