@@ -1,5 +1,11 @@
 import json
 import re
+from pathlib import Path
+
+
+def ensure_folder_exists(folder_name: str):
+    folder = Path(folder_name)
+    folder.mkdir(parents=True, exist_ok=True)
 
 
 def read_markdown_table(file_path: str):
@@ -57,10 +63,12 @@ def save_to_json(data: dict, output_file: str):
 
 
 def main():
+    output_path = "data"
     markdown_file = "README.md"
-    output_json = "data/portfolio.json"
+    output_json = f"{output_path}/portfolio.json"
 
     try:
+        ensure_folder_exists(output_path)
         table_data = read_markdown_table(markdown_file)
         save_to_json(table_data, output_json)
         print(f"Table data saved to {output_json}")
