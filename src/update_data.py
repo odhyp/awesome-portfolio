@@ -6,26 +6,49 @@ def read_markdown_table(file_path: str):
     with open(file_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
-        # Filter out lines that are part of the table and remove any alignment row
-        table_lines = [line.strip() for line in lines if "|" in line]
-        table_lines = [
-            line for line in table_lines if not re.match(r"\|?\s*-+\s*\|", line)
-        ]
+    table_lines = [line.strip() for line in lines if "|" in line]
 
-        if len(table_lines) < 2:
-            raise ValueError("Markdown file does not contain a valid table!")
+    # Remove any alignment row (e.g., | --- | --- |)
+    table_lines = [line for line in table_lines if not re.match(r"\|?\s*-+\s*\|", line)]
 
-        # Extract headers
-        headers = [col.strip() for col in table_lines[0].split("|") if col.strip()]
+    if len(table_lines) < 2:
+        raise ValueError("Markdown file does not contain a valid table!")
 
-        # Extract rows
-        data = []
-        for line in table_lines[1:]:
-            values = [col.strip() for col in line.split("|") if col.strip()]
-            if len(values) == len(headers):
-                data.append(dict(zip(headers, values)))
+    data = []
+    for line in table_lines[1:]:
+        values = [col.strip() for col in line.split("|") if col.strip()]
+        if values:
+            modified_entry = {
+                "author": values[0] if values else "",
+                "liveName": (
+                    re.search(r"\[(.*?)\]", values[1]).group(1)
+                    if len(values) > 1
+                    else ""
+                ),
+                "liveUrl": (
+                    re.search(r"\((.*?)\)", values[1]).group(1)
+                    if len(values) > 1
+                    else ""
+                ),
+                "sourceName": (
+                    re.search(r"\[(.*?)\]", values[2]).group(1)
+                    if len(values) > 2
+                    else ""
+                ),
+                "sourceUrl": (
+                    re.search(r"\((.*?)\)", values[2]).group(1)
+                    if len(values) > 2
+                    else ""
+                ),
+                "techStack": (
+                    [s.strip() for s in values[3].split(",")]
+                    if len(values) > 3
+                    else "[]"
+                ),
+            }
+            data.append(modified_entry)
 
-        return data
+    return data
 
 
 def save_to_json(data: dict, output_file: str):
@@ -34,6 +57,7 @@ def save_to_json(data: dict, output_file: str):
 
 
 # FIXME: Don't run it here, move it to main.py instead.
+# DEV TEMPORARY
 def main():
     markdown_file = "README.md"
     output_json = "data/portfolio.json"
