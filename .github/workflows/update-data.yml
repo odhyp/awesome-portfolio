@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r src/requirements-data.txt
 
-      - name: Run update-data script
+      - name: Run Script - Update Data
         run: python src/update_data.py
 
       - name: Debug Git Status
