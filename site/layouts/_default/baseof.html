@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+
+  <!-- DEV TOOLS START -->
+  {{- partial "dev/dev-tools.html" . -}}
+  <!-- DEV TOOLS END -->
+
+  <body class="flex min-h-dvh flex-col font-sans sm:min-h-screen">
+    <!-- HEADER START -->
+    {{- partial "header.html" . -}}
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="mx-auto w-screen max-w-4xl grow">
+      {{- block "main" . }}{{- end }}
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    {{- partial "footer.html" . -}}
+    <!-- FOOTER END -->
+  </body>
+</html>
