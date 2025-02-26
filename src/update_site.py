@@ -11,7 +11,6 @@ def read_json(file_path: str) -> dict:
 
 def create_markdown(portfolio_data: dict):
     title = portfolio_data["author"]
-    current_date = datetime.now().strftime("%Y-%m-%d")
     author = portfolio_data["author"]
     live_name = portfolio_data["liveName"]
     live_url = portfolio_data["liveUrl"]
@@ -21,7 +20,6 @@ def create_markdown(portfolio_data: dict):
 
     front_matter = f"""+++
 title = "{title}"
-date = {current_date}
 author = "{author}"
 liveName = "{live_name}"
 liveUrl = "{live_url}"
