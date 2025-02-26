@@ -1,6 +1,5 @@
 +++
 title = "Odhy Pradhana"
-date = 2025-02-25
 author = "Odhy Pradhana"
 liveName = "odhyp.com"
 liveUrl = "https://odhyp.com/"
