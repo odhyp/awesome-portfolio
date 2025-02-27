@@ -1,0 +1,21 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  run-update-data:
+    uses: ./.github/workflows/update-data.yml
+
+  run-update-ss:
+    needs: run-update-data
+    uses: ./.github/workflows/update-ss.yml
+
+  run-update-site:
+    needs: run-update-ss
+    uses: ./.github/workflows/update-site.yml
