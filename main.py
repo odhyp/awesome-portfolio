@@ -1,7 +1,7 @@
 import argparse
+import importlib
 
 from src.installer import install_packages
-from src import update_data, update_site, update_ss
 
 
 def main():
@@ -19,14 +19,18 @@ def main():
     args = parser.parse_args()
 
     if args.update_data:
+        update_data = importlib.import_module("src.update_data")
         update_data.main()
 
     if args.update_ss:
         requirements = ["playwright"]
         install_packages(requirements, install_playwright=True)
+
+        update_ss = importlib.import_module("src.update_ss")
         update_ss.main()
 
     if args.update_site:
+        update_site = importlib.import_module("src.update_site")
         update_site.main()
 
 
