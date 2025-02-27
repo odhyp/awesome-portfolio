@@ -30,10 +30,12 @@ jobs:
       - name: Run update_ss Script
         run: python main.py --update-ss
 
-      - name: Commit and Push
+      - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "chore: update screenshot"
-          git push origin master
+
+      - name: Check for changes
+        run: |
+          git status
+          git diff --quiet || (git add . && git commit -m "chore: update screenshot" && git push origin master)
