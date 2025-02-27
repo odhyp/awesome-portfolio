@@ -35,7 +35,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Check for changes
+      - name: Check for changes and commit if needed
         run: |
           git status
-          git diff --quiet || (git add . && git commit -m "chore: update data" && git push origin master)
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            git commit -m "chore: update data"
+            git push origin master
+          else
+            echo "No changes to commit"
+          fi
