@@ -10,7 +10,11 @@ def main():
         "--update-data", action="store_true", help="Run the update_data function"
     )
     parser.add_argument(
-        "--update-ss", action="store_true", help="Run the update_ss function"
+        "--update-ss",
+        nargs="?",
+        const="latest",
+        default=None,
+        help="Run the update_ss function with an optional update type (default: latest)",
     )
     parser.add_argument(
         "--update-site", action="store_true", help="Run the update_site function"
@@ -27,7 +31,7 @@ def main():
         install_packages(requirements, install_playwright=True)
 
         update_ss = importlib.import_module("src.update_ss")
-        update_ss.main()
+        update_ss.main(update_type=args.update_ss)
 
     if args.update_site:
         update_site = importlib.import_module("src.update_site")
