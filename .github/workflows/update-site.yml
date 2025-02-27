@@ -1,6 +1,7 @@
 name: Update Site Contents
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 permissions:

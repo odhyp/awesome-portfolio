@@ -1,13 +1,15 @@
 name: Update Portfolio Data
 
 on:
+  workflow_call:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout Repository
