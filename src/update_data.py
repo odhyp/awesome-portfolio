@@ -1,12 +1,6 @@
 import re
-from pathlib import Path
 
-from src.utils import save_to_json
-
-
-def ensure_folder_exists(folder_name: str):
-    folder = Path(folder_name)
-    folder.mkdir(parents=True, exist_ok=True)
+from src.utils import save_to_json, ensure_folder_exists
 
 
 def read_markdown_table(file_path: str):
