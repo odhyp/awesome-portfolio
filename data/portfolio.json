@@ -1,0 +1,15 @@
+[
+    {
+        "author": "Odhy Pradhana",
+        "liveName": "odhyp.com",
+        "liveUrl": "https://odhyp.com/",
+        "sourceName": "GitHub",
+        "sourceUrl": "https://github.com/odhyp/odhyp.com",
+        "techStack": [
+            "Hugo",
+            "TailwindCSS",
+            "JavaScript",
+            "Vercel"
+        ]
+    }
+]
