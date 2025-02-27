@@ -63,12 +63,12 @@ def save_to_json(data: dict, output_file: str):
 
 
 def main():
-    output_path = "data"
+    output_dir = "data"
     markdown_file = "README.md"
-    output_json = f"{output_path}/portfolio.json"
+    output_json = f"{output_dir}/portfolio.json"
 
     try:
-        ensure_folder_exists(output_path)
+        ensure_folder_exists(output_dir)
         table_data = read_markdown_table(markdown_file)
         save_to_json(table_data, output_json)
         print(f"Table data saved to {output_json}")
