@@ -20,7 +20,3 @@ def main():
     output_path = "screenshot.png"
 
     take_screenshot(url, output_path)
-
-
-if __name__ == "__main__":
-    main()

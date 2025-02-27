@@ -37,7 +37,3 @@ def main():
 
     for item in portfolio_list:
         create_markdown(item)
-
-
-if __name__ == "__main__":
-    main()
