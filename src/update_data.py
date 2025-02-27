@@ -1,6 +1,7 @@
-import json
 import re
 from pathlib import Path
+
+from src.utils import save_to_json
 
 
 def ensure_folder_exists(folder_name: str):
@@ -55,11 +56,6 @@ def read_markdown_table(file_path: str):
             data.append(modified_entry)
 
     return data
-
-
-def save_to_json(data: dict, output_file: str):
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4)
 
 
 def main():
