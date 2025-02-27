@@ -11,8 +11,6 @@ Dolorum officiis consequuntur modi dolorem, fugit itaque tempore odio quidem vol
 | Author | Live | Source | Tech Stack |
 | ------ | ---- | ------ | ---------- |
 | Odhy Pradhana | [odhyp.com](https://odhyp.com/) | [GitHub](https://github.com/odhyp/odhyp.com) | Hugo, TailwindCSS, JavaScript, Vercel |
-| John Doe | [johndoe.com](https://johndoe.com) | [GitHub](https://github.com/johndoe/johndoe.com) | NextJS, TailwindCSS, Vercel |
-| Jane Doe | [janedoe.com](https://janedoe.com) | [GitHub](https://github.com/janedoe/janedoe.com) | React, TypeScripts, TailwindCSS, Netlify |
 
 ## License
 
