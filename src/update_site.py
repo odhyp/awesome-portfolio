@@ -24,7 +24,7 @@ tags = {tags}
 """
 
     file_name = title.lower().replace(" ", "-")
-    file_path = Path(f"site/content/{file_name}.md")
+    file_path = Path(f"site/content/portfolio/{file_name}.md")
     file_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(file_path, "w", encoding="utf-8") as f:
