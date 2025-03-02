@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+@plugin 'tailwind-scrollbar';
+
 @theme {
   --font-sans: "Montserrat", serif;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+}
+
+/* Default site */
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  @apply scrollbar-thumb-neutral-800 scrollbar-thin scrollbar-track-neutral-900;
+}
+
+body {
+  @apply selection:bg-teal-300 selection:text-teal-900;
 }
