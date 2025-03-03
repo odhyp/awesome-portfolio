@@ -1,0 +1,59 @@
+{{ define "main" }}
+<section class="lg:mt-8">
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-3">
+    <!-- PORTFOLIO LIST START -->
+    {{- range .Pages -}}
+    <div
+      class="flex flex-col rounded-md border border-neutral-300 bg-neutral-100 transition-shadow duration-300 ease-in-out hover:shadow-lg"
+    >
+      <a href="{{ .Params.liveUrl }}" target="_blank" class="group">
+        <div class="overflow-hidden rounded-t-md object-cover">
+          <img
+            src="/ss/{{ .Params.liveName }}.png"
+            alt="{{ .Title }}'s Website"
+            class="w-full rounded-t-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+          />
+        </div>
+      </a>
+
+      <div class="flex h-full flex-col gap-y-1 px-8 py-8">
+        <span class="mx-1 shrink-0 text-lg font-bold"
+          >{{ .Params.author }}</span
+        >
+
+        <div class="mx-1 inline grow space-x-2 text-neutral-500">
+          {{- partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}
+        </div>
+
+        <div class="mt-4 flex w-full shrink-0 flex-col gap-4 lg:flex-row">
+          <a
+            href="{{ .Params.liveUrl }}"
+            target="_blank"
+            class="flex w-full items-center justify-center gap-x-4 rounded-md border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
+            ><iconify-icon
+              icon="material-symbols:play-circle-rounded"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            <span class="text-center text-sm font-medium">Visit Website</span>
+          </a>
+
+          <a
+            href="{{ .Params.sourceUrl }}"
+            target="_blank"
+            class="flex w-full items-center justify-center gap-x-4 rounded-md border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
+            ><iconify-icon
+              icon="simple-icons:{{ .Params.sourceName | lower }}"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            <span class="text-center text-sm font-medium">Repository</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {{- end -}}
+    <!-- PORTFOLIO LIST END -->
+  </div>
+</section>
+{{ end }}
