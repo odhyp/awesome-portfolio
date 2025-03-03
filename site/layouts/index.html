@@ -40,4 +40,110 @@
   </div>
 </section>
 
+<section
+  class="mx-auto mt-32 w-full max-w-4xl space-y-8 lg:mt-48 xl:space-y-16"
+>
+  <h2
+    class="text-center text-xl font-semibold md:text-2xl lg:text-3xl xl:text-4xl"
+  >
+    Awesome Features 😎
+  </h2>
+
+  <!-- FEATURES CARD LIST START -->
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+    <!-- CARDS 1 START -->
+    <div
+      class="flex items-start justify-start gap-x-8 rounded-lg border border-neutral-300 bg-neutral-100/50 p-6 lg:p-8"
+    >
+      <div class="flex items-center justify-center rounded-md bg-teal-500 p-2">
+        <iconify-icon
+          icon="fluent-emoji:nerd-face"
+          width="36"
+          height="36"
+        ></iconify-icon>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold">Easy to Contribute</h3>
+        <span class="text-sm"
+          >Effortlessly add your portfolio by editing the README.md
+        </span>
+      </div>
+    </div>
+    <!-- CARDS 1 END -->
+
+    <!-- CARDS 2 START -->
+    <div
+      class="flex items-start justify-start gap-x-8 rounded-lg border border-neutral-300 bg-neutral-100/50 p-6 lg:p-8"
+    >
+      <div class="flex items-center justify-center rounded-md bg-teal-500 p-2">
+        <iconify-icon
+          icon="twemoji:camera"
+          width="36"
+          height="36"
+        ></iconify-icon>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold">Website Preview</h3>
+        <span class="text-sm"
+          >Preview portfolio designs with screenshots before visiting the site
+        </span>
+      </div>
+    </div>
+    <!-- CARDS 2 END -->
+
+    <!-- CARDS 3 START -->
+    <div
+      class="flex items-start justify-start gap-x-8 rounded-lg border border-neutral-300 bg-neutral-100/50 p-6 lg:p-8"
+    >
+      <div class="flex items-center justify-center rounded-md bg-teal-500 p-2">
+        <iconify-icon
+          icon="tabler:stack-2-filled"
+          width="36"
+          height="36"
+        ></iconify-icon>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold">Tech Stack</h3>
+        <span class="text-sm"
+          >A tagging system to highlight the technologies used in each portfolio
+        </span>
+      </div>
+    </div>
+    <!-- CARDS 3 END -->
+
+    <!-- CARDS 4 START -->
+    <div
+      class="flex items-start justify-start gap-x-8 rounded-lg border border-neutral-300 bg-neutral-100/50 p-6 lg:p-8"
+    >
+      <div class="flex items-center justify-center rounded-md bg-teal-500 p-2">
+        <iconify-icon
+          icon="simple-icons:git"
+          width="36"
+          height="36"
+        ></iconify-icon>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold">Source Code</h3>
+        <span class="text-sm"
+          >Explore portfolio repositories to learn, adapt, and get inspired
+        </span>
+      </div>
+    </div>
+    <!-- CARDS 4 END -->
+  </div>
+  <!-- FEATURES CARD LIST END -->
+</section>
+
+<section class="mx-auto mt-16 w-full py-16 lg:mt-32">
+  <h2
+    class="text-center text-xl font-semibold md:text-2xl lg:text-3xl xl:text-4xl"
+  >
+    Share Your Thoughts!
+  </h2>
+
+  <div class="mx-auto mt-8 w-full max-w-prose">
+    {{- partial "giscus.html" . -}}
+  </div>
+</section>
+
 {{ end }}
