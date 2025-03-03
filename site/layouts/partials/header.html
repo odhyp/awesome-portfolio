@@ -1,25 +1,82 @@
-<header class="mx-auto w-full max-w-7xl bg-red-400">
-  <div class="px-8 py-6">
+<header class="fixed top-0 z-20 w-full max-w-full">
+  <div class="container mx-auto w-full px-8 py-6">
     <nav class="flex items-center justify-between">
-      <div class="flex items-center gap-x-4">
-        <a href="" class="text-lg font-bold">Awesome Portfolio</a>
-
-        <a href="https://github.com/sindresorhus/awesome"
-          ><img
-            src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
-      "
-            alt="Awesome List"
-        /></a>
+      <div
+        class="flex flex-col justify-start gap-y-2 sm:flex-row sm:items-center sm:gap-x-4"
+      >
+        <a href="/" class="text-center text-sm font-bold md:text-base"
+          >Awesome <br class="md:hidden" />Portfolio</a
+        >
       </div>
 
-      <ul class="flex items-center gap-x-8 font-medium">
-        <li>
-          <a href="">Portfolios</a>
-        </li>
-        <li>
-          <a href="">Guide</a>
-        </li>
-      </ul>
+      <div class="flex items-center gap-x-6 text-sm font-medium lg:gap-x-8">
+        <ul class="hidden items-center gap-x-8 lg:flex">
+          <li>
+            <a
+              href="/portfolio"
+              class="hover:underline hover:underline-offset-4"
+              >Portfolios</a
+            >
+          </li>
+          <li>
+            <a
+              href="/tech-stack"
+              class="hover:underline hover:underline-offset-4"
+              >Tech Stack</a
+            >
+          </li>
+          <li>
+            <a href="/guide" class="hover:underline hover:underline-offset-4"
+              >Guide</a
+            >
+          </li>
+        </ul>
+
+        <hr class="hidden h-5 border-l border-neutral-300 lg:block" />
+
+        <button
+          class="flex hidden cursor-pointer items-center transition-transform ease-in-out hover:scale-110 hover:animate-[spin_2s_ease-in-out_infinite]"
+        >
+          <iconify-icon
+            icon="material-symbols:wb-sunny-outline-rounded"
+            width="20"
+            height="20"
+          ></iconify-icon>
+          <!-- material-symbols:dark-mode-outline-rounded -->
+        </button>
+
+        <a
+          href="https://github.com/odhyp/awesome-portfolios"
+          target="_blank"
+          class="flex items-center transition-transform ease-in-out hover:scale-110"
+        >
+          <iconify-icon
+            icon="simple-icons:github"
+            width="20"
+            height="20"
+          ></iconify-icon>
+        </a>
+
+        <a
+          href="https://buymeacoffee.com/odhyp"
+          target="_blank"
+          class="flex items-center transition-transform ease-in-out hover:scale-110"
+        >
+          <iconify-icon
+            icon="simple-icons:buymeacoffee"
+            width="20"
+            height="20"
+          ></iconify-icon>
+        </a>
+
+        <button class="flex items-center lg:hidden">
+          <iconify-icon
+            icon="material-symbols:menu-rounded"
+            width="24"
+            height="24"
+          ></iconify-icon>
+        </button>
+      </div>
     </nav>
   </div>
 </header>
