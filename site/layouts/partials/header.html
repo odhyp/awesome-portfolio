@@ -1,15 +1,30 @@
-<header class="fixed top-0 z-20 w-full max-w-full">
+<header
+  id="header"
+  class="fixed top-0 z-20 w-full max-w-full bg-transparent transition-all duration-500 ease-in-out"
+>
   <div class="container mx-auto w-full px-8 py-6">
     <nav class="flex items-center justify-between">
       <div
         class="flex flex-col justify-start gap-y-2 sm:flex-row sm:items-center sm:gap-x-4"
       >
-        <a href="/" class="text-center text-sm font-bold md:text-base"
-          >Awesome <br class="md:hidden" />Portfolio</a
+        <a
+          href="/"
+          class="group relative text-center text-sm font-bold md:text-base xl:text-lg"
         >
+          <p
+            class="transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          >
+            AP!
+          </p>
+          <p
+            class="absolute top-0 whitespace-nowrap opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+          >
+            Awesome Portfolio
+          </p>
+        </a>
       </div>
 
-      <div class="flex items-center gap-x-6 text-sm font-medium lg:gap-x-8">
+      <div class="flex items-center gap-x-6 text-sm font-semibold lg:gap-x-8">
         <ul class="hidden items-center gap-x-8 lg:flex">
           <li>
             <a
@@ -32,7 +47,7 @@
           </li>
         </ul>
 
-        <hr class="hidden h-5 border-l border-neutral-300 lg:block" />
+        <hr class="hidden h-4 border-l-2 border-neutral-300 lg:block" />
 
         <button
           class="flex hidden cursor-pointer items-center transition-transform ease-in-out hover:scale-110 hover:animate-[spin_2s_ease-in-out_infinite]"
