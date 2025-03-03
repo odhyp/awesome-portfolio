@@ -1,3 +1,43 @@
 {{ define "main" }}
-<section class="">Index page</section>
+<section class="">
+  <div class="mx-auto flex w-full flex-col items-center justify-center gap-8">
+    <a
+      href="https://github.com/sindresorhus/awesome"
+      target="_blank"
+      class="items-center transition-transform ease-in-out hover:scale-105"
+      ><img
+        src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
+      "
+        alt="Awesome List"
+        class="animate-wiggle h-5 w-auto lg:h-6"
+    /></a>
+    <h1
+      class="text-center text-2xl leading-tight md:text-4xl lg:text-5xl xl:text-6xl"
+    >
+      A Curated Collection of <br />
+      <span class="text-3xl font-semibold md:text-5xl lg:text-6xl xl:text-7xl">
+        Portfolio Websites
+      </span>
+    </h1>
+    <p class="w-full max-w-sm text-center text-lg sm:max-w-md md:max-w-xl">
+      The ultimate portfolio inspiration library! Whether you're revamping your
+      own site or just browsing, discover the best personal websites that
+      showcase skills, creativity, and personality.
+    </p>
+
+    <div class="grid w-full max-w-md grid-cols-2 gap-x-4 lg:gap-x-8">
+      <a
+        href="/portfolio"
+        class="flex justify-center rounded-md border border-neutral-400 bg-neutral-100/50 py-2 text-sm font-semibold transition-transform duration-300 ease-in-out hover:scale-105"
+        >See Portfolios</a
+      >
+      <a
+        href="/guide"
+        class="flex justify-center rounded-md border bg-teal-700/75 py-2 text-sm font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+        >Contribute Now!</a
+      >
+    </div>
+  </div>
+</section>
+
 {{ end }}
