@@ -24,7 +24,7 @@ html {
 }
 
 html {
-  @apply scrollbar-thumb-neutral-800 scrollbar-thin scrollbar-track-neutral-900;
+  @apply scrollbar-thumb-neutral-600 scrollbar-thin scrollbar-track-neutral-800;
 }
 
 body {
