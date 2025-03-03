@@ -6,13 +6,23 @@
   {{- partial "dev/dev-tools.html" . -}}
   <!-- DEV TOOLS END -->
 
-  <body class="flex min-h-dvh flex-col font-sans sm:min-h-screen">
+  <body
+    class="relative flex min-h-dvh flex-col bg-neutral-100 font-sans text-neutral-800 sm:min-h-screen"
+  >
+    <div
+      class="absolute inset-0 -z-50 h-full w-full bg-neutral-100 bg-[linear-gradient(to_right,#ececec_1px,transparent_1px),linear-gradient(to_bottom,#ececec_1px,transparent_1px)] bg-[size:6rem_4rem]"
+    >
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 bg-[radial-gradient(circle_400px_at_100%_100px,#c5fffb,transparent)] md:bg-[radial-gradient(circle_600px_at_100%_150px,#c5fffb,transparent)] lg:bg-[radial-gradient(circle_800px_at_100%_200px,#c5fffb,transparent)]"
+      ></div>
+    </div>
+
     <!-- HEADER START -->
     {{- partial "header.html" . -}}
     <!-- HEADER END -->
 
     <!-- MAIN START -->
-    <main class="mx-auto w-screen max-w-4xl grow">
+    <main class="container mx-auto mt-44 w-full grow px-8 xl:mt-40">
       {{- block "main" . }}{{- end }}
     </main>
     <!-- MAIN END -->
