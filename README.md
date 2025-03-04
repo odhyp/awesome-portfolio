@@ -2,17 +2,38 @@
 
 An awesome list of portfolio websites to spark ideas and inspiration.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad modi magni expedita blanditiis aperiam unde similique hic, consequuntur soluta nisi, quidem ratione aliquam corrupti possimus. A voluptas nobis accusamus.
+This repository curates a collection of outstanding portfolio websites built by developers, designers, and creatives. Whether you're looking for design inspiration, technology stack insights, or best practices, this list is a great resource to explore various approaches to personal branding online.
 
-## Contribution
+## Contribution 📒
 
-Dolorum officiis consequuntur modi dolorem, fugit itaque tempore odio quidem voluptate velit perspiciatis quia corrupti totam error odit illo cupiditate.
+We encourage you to add your portfolio to this list. Follow our [Contribution Guide] for step-by-step instructions.
+
+## Portfolio List 😎
 
 | Author | Live | Source | Tech Stack |
 | ------ | ---- | ------ | ---------- |
 | Odhy Pradhana | [odhyp.com](https://odhyp.com/) | [GitHub](https://github.com/odhyp/odhyp.com) | Hugo, TailwindCSS, JavaScript, Vercel |
 | Firdig Alfalakhi | [alfalakhi.catco.uno](https://alfalakhi.catco.uno/) | [GitHub](https://github.com/Firkhie) | Next.js, TailwindCSS, TypeScript, Vercel |
 
+## Why Build a Portfolio?
+
+A portfolio website is a great way to:
+
+- Showcase your skills and projects
+- Improve your online presence and personal brand
+- Stand out to potential clients or employers
+- Share insights and experiences with the community
+
 ## License
 
-Dolorum officiis consequuntur modi dolorem, fugit itaque tempore odio quidem voluptate velit perspiciatis quia corrupti totam error odit illo cupiditate.
+This project is licensed under the [MIT License]
+
+## Acknowledgments 🚀
+
+Inspired by [Awesome List]. Thanks to all contributors who help improve this project!
+
+<!-- LINKS -->
+
+[Contribution Guide]: https://awesome-porto.vercel.app/guide
+[MIT License]: /LICENSE
+[Awesome List]: https://github.com/sindresorhus/awesome
