@@ -24,9 +24,23 @@ html {
 }
 
 html {
-  @apply scrollbar-thumb-neutral-600 scrollbar-thin scrollbar-track-neutral-800;
+  @apply scrollbar-thumb-neutral-500 scrollbar-thin scrollbar-track-neutral-800;
 }
 
 body {
   @apply selection:bg-teal-300 selection:text-teal-900;
+}
+
+/* Code block and Inline-code block */
+pre {
+  @apply scrollbar-thumb-neutral-500 scrollbar-thin scrollbar-track-neutral-800 rounded-lg p-4;
+}
+
+code:not(pre > *) {
+  @apply rounded-md bg-teal-400 px-2 py-1 select-all;
+}
+
+code::before,
+code::after {
+  @apply hidden;
 }
