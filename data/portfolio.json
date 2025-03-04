@@ -11,5 +11,18 @@
             "JavaScript",
             "Vercel"
         ]
+    },
+    {
+        "author": "Firdig Alfalakhi",
+        "liveName": "alfalakhi.catco.uno",
+        "liveUrl": "https://alfalakhi.catco.uno/",
+        "sourceName": "GitHub",
+        "sourceUrl": "https://github.com/Firkhie",
+        "techStack": [
+            "Next.js",
+            "TailwindCSS",
+            "TypeScript",
+            "Vercel"
+        ]
     }
 ]
