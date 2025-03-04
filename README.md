@@ -11,6 +11,7 @@ Dolorum officiis consequuntur modi dolorem, fugit itaque tempore odio quidem vol
 | Author | Live | Source | Tech Stack |
 | ------ | ---- | ------ | ---------- |
 | Odhy Pradhana | [odhyp.com](https://odhyp.com/) | [GitHub](https://github.com/odhyp/odhyp.com) | Hugo, TailwindCSS, JavaScript, Vercel |
+| Firdig Alfalakhi | [alfalakhi.catco.uno](https://alfalakhi.catco.uno/) | [GitHub](https://github.com/Firkhie) | Next.js, TailwindCSS, TypeScript, Vercel |
 
 ## License
 
