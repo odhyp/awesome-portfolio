@@ -1,5 +1,13 @@
 {{ define "main" }}
 <section>
-  <article class="prose prose-neutral">{{ .Content }}</article>
+  <article class="prose prose-neutral mx-auto w-full max-w-prose">
+    {{ .Content }}
+  </article>
+</section>
+
+<section>
+  <div class="mx-auto mt-8 w-full max-w-prose">
+    {{- partial "giscus.html" . -}}
+  </div>
 </section>
 {{ end }}
