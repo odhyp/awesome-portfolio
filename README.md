@@ -4,18 +4,7 @@ An awesome list of portfolio websites to spark ideas and inspiration.
 
 This repository curates a collection of outstanding portfolio websites built by developers, designers, and creatives. Whether you're looking for design inspiration, technology stack insights, or best practices, this list is a great resource to explore various approaches to personal branding online.
 
-## Contribution 📒
-
-We encourage you to add your portfolio to this list. Follow our [Contribution Guide] for step-by-step instructions.
-
-## Portfolio List 😎
-
-| Author | Live | Source | Tech Stack |
-| ------ | ---- | ------ | ---------- |
-| Odhy Pradhana | [odhyp.com](https://odhyp.com/) | [GitHub](https://github.com/odhyp/odhyp.com) | Hugo, TailwindCSS, JavaScript, Vercel |
-| Firdig Alfalakhi | [alfalakhi.catco.uno](https://alfalakhi.catco.uno/) | [GitHub](https://github.com/Firkhie) | Next.js, TailwindCSS, TypeScript, Vercel |
-
-## Why Build a Portfolio?
+### Why Build a Portfolio?
 
 A portfolio website is a great way to:
 
@@ -24,7 +13,24 @@ A portfolio website is a great way to:
 - Stand out to potential clients or employers
 - Share insights and experiences with the community
 
-## License
+## Portfolio List ☕
+
+| Author | Live | Source | Tech Stack |
+| ------ | ---- | ------ | ---------- |
+| Odhy Pradhana | [odhyp.com](https://odhyp.com/) | [GitHub](https://github.com/odhyp/odhyp.com) | Hugo, TailwindCSS, JavaScript, Vercel |
+| Firdig Alfalakhi | [alfalakhi.catco.uno](https://alfalakhi.catco.uno/) | [GitHub](https://github.com/Firkhie) | Next.js, TailwindCSS, TypeScript, Vercel |
+
+## Contribution 📖
+
+We encourage you to add your portfolio to this list. Follow our [Contribution Guide] for step-by-step instructions.
+
+### Contributors
+
+<a href="https://github.com/odhyp/awesome-portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=odhyp/awesome-portfolio" alt="contrib.rocks image" />
+</a>
+
+## License 📒
 
 This project is licensed under the [MIT License]
 
