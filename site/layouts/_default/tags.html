@@ -1,1 +1,45 @@
-{{ define "main" }} {{ end }}
+{{ define "main" }}
+<section class="lg:mt-8">
+  <h2
+    class="text-center text-2xl leading-tight font-semibold md:text-3xl lg:text-4xl xl:text-5xl"
+  >
+    {{ .Title }}
+  </h2>
+  <h3
+    class="mx-auto mt-4 w-full max-w-sm text-center text-lg sm:max-w-md md:max-w-xl"
+  >
+    {{ .Description }}
+  </h3>
+
+  <div
+    class="mx-auto my-16 grid w-full max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+  >
+    <!-- Icon name list for Simple Icons -->
+    {{ $iconMap := dict "Next.js" "nextdotjs" "C++" "cplusplus" "C#" "csharp"
+    "F#" "fsharp" "Node.js" "nodedotjs" }}
+
+    <!-- Icon name corrections -->
+    {{ range site.Taxonomies.tags.Alphabetical }} {{ $iconName := .Page.Title |
+    lower }} {{ if isset $iconMap .Page.Title }} {{ $iconName = index $iconMap
+    .Page.Title }} {{ end }}
+
+    <!-- Terms items -->
+    <a
+      href="{{ .Page.RelPermalink }}"
+      class="group flex w-full items-center justify-center gap-x-4 rounded-lg border border-neutral-300 bg-white/25 px-8 py-3 transition-all duration-200 ease-in-out hover:border-neutral-400 hover:bg-white/75 hover:shadow-md"
+    >
+      <iconify-icon
+        icon="simple-icons:{{ $iconName }}"
+        width="24"
+        height="24"
+      ></iconify-icon>
+
+      <div class="whitespace-nowrap">
+        <span class="font-medium">{{ .Page.Title }}</span>
+        <span class="text-black/50">&nbsp;({{ .Count }})</span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
