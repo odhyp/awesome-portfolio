@@ -4,15 +4,30 @@
     <!-- PORTFOLIO LIST START -->
     {{- range .Pages.ByDate.Reverse -}}
     <div
-      class="flex flex-col rounded-md border border-neutral-300 bg-neutral-100 transition-shadow duration-300 ease-in-out hover:shadow-lg"
+      class="flex flex-col rounded-xl border border-neutral-300 bg-neutral-100 transition-shadow duration-300 ease-in-out hover:shadow-xl"
     >
-      <a href="{{ .Params.liveUrl }}" target="_blank" class="group">
-        <div class="overflow-hidden rounded-t-md object-cover">
+      <a
+        href="{{ .Params.liveUrl }}"
+        target="_blank"
+        class="group transition-shadow duration-300 ease-in-out hover:shadow-lg"
+      >
+        <div class="relative overflow-hidden rounded-t-md object-cover">
           <img
             src="/ss/{{ .Params.liveName }}.png"
             alt="{{ .Title }}'s Website"
-            class="w-full rounded-t-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+            class="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out"
           />
+          <div
+            class="absolute inset-0 flex h-full w-full items-center justify-center rounded-xl bg-neutral-900/20 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+          >
+            <iconify-icon
+              icon="material-symbols:arrow-outward-rounded"
+              width="20"
+              height="20"
+              class="absolute top-4 right-4 rounded-lg border border-neutral-500 bg-neutral-900 p-2 text-white"
+            ></iconify-icon>
+            <span></span>
+          </div>
         </div>
       </a>
 
@@ -29,8 +44,9 @@
           <a
             href="{{ .Params.liveUrl }}"
             target="_blank"
-            class="flex w-full items-center justify-center gap-x-4 rounded-md border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
-            ><iconify-icon
+            class="flex w-full items-center justify-center gap-x-4 rounded-lg border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
+          >
+            <iconify-icon
               icon="material-symbols:play-circle-rounded"
               width="20"
               height="20"
@@ -41,15 +57,17 @@
           <a
             href="{{ .Params.sourceUrl }}"
             target="_blank"
-            class="flex w-full items-center justify-center gap-x-4 rounded-md border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
-            ><iconify-icon
+            class="flex w-full items-center justify-center gap-x-4 rounded-lg border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
+          >
+            <iconify-icon
               icon="simple-icons:{{ .Params.sourceName | lower }}"
               width="20"
               height="20"
-            ></iconify-icon>
-            <span class="text-center text-sm font-medium"
-              >{{ .Params.sourceName }}</span
             >
+            </iconify-icon>
+            <span class="text-center text-sm font-medium">
+              {{ .Params.sourceName }}
+            </span>
           </a>
         </div>
       </div>
