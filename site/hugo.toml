@@ -6,3 +6,6 @@ title = 'Awesome Portfolios'
 [markup.highlight]
 style = "rose-pine-moon"
 tabWidth = 4
+
+[taxonomies]
+tag = "tags"
