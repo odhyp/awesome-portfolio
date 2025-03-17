@@ -2,77 +2,7 @@
 <section class="lg:mt-8">
   <div class="grid grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-3">
     <!-- PORTFOLIO LIST START -->
-    {{- range .Pages.ByDate.Reverse -}}
-    <div
-      class="flex flex-col rounded-xl border border-neutral-300 bg-neutral-100 transition-shadow duration-300 ease-in-out hover:shadow-xl"
-    >
-      <a
-        href="{{ .Params.liveUrl }}"
-        target="_blank"
-        class="group transition-shadow duration-300 ease-in-out hover:shadow-lg"
-      >
-        <div class="relative overflow-hidden rounded-t-md object-cover">
-          <img
-            src="/ss/{{ .Params.liveName }}.png"
-            alt="{{ .Title }}'s Website"
-            class="w-full rounded-xl object-cover transition-transform duration-500 ease-in-out"
-          />
-          <div
-            class="absolute inset-0 flex h-full w-full items-center justify-center rounded-xl bg-neutral-900/20 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-          >
-            <iconify-icon
-              icon="material-symbols:arrow-outward-rounded"
-              width="20"
-              height="20"
-              class="absolute top-4 right-4 rounded-lg border border-neutral-500 bg-neutral-900 p-2 text-white"
-            ></iconify-icon>
-            <span></span>
-          </div>
-        </div>
-      </a>
-
-      <div class="flex h-full flex-col gap-y-1 px-8 py-8">
-        <span class="mx-1 shrink-0 text-lg font-bold"
-          >{{ .Params.author }}</span
-        >
-
-        <div class="mx-1 inline grow space-x-2 text-neutral-500">
-          {{- partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}
-        </div>
-
-        <div class="mt-4 flex w-full shrink-0 flex-col gap-4 lg:flex-row">
-          <a
-            href="{{ .Params.liveUrl }}"
-            target="_blank"
-            class="flex w-full items-center justify-center gap-x-4 rounded-lg border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
-          >
-            <iconify-icon
-              icon="material-symbols:play-circle-rounded"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            <span class="text-center text-sm font-medium">Website</span>
-          </a>
-
-          <a
-            href="{{ .Params.sourceUrl }}"
-            target="_blank"
-            class="flex w-full items-center justify-center gap-x-4 rounded-lg border border-neutral-300 px-4 py-2 hover:bg-neutral-200/50 lg:w-1/2"
-          >
-            <iconify-icon
-              icon="simple-icons:{{ .Params.sourceName | lower }}"
-              width="20"
-              height="20"
-            >
-            </iconify-icon>
-            <span class="text-center text-sm font-medium">
-              {{ .Params.sourceName }}
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-    {{- end -}}
+    {{- partial "portfolio-list.html" . -}}
     <!-- PORTFOLIO LIST END -->
   </div>
 </section>
