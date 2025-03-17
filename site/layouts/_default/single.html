@@ -1,6 +1,18 @@
 {{ define "main" }}
 <section>
-  <article class="prose prose-neutral mx-auto w-full max-w-prose">
+  <h2
+    class="text-center text-2xl leading-tight font-semibold md:text-3xl lg:text-4xl xl:text-5xl"
+  >
+    {{ .Title }}
+  </h2>
+
+  <h3
+    class="mx-auto mt-4 w-full max-w-sm text-center text-lg sm:max-w-md md:max-w-xl"
+  >
+    {{ .Description }}
+  </h3>
+
+  <article class="prose prose-neutral mx-auto mt-16 w-full max-w-prose">
     {{ .Content }}
   </article>
 </section>
