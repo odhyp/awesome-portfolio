@@ -1,11 +1,8 @@
 +++
 title = "Guide"
+description = "Want to showcase your portfolio? Follow this guide to add your project and help grow the collection!"
 layout = "single"
 +++
-
-# Contribution Guide
-
-Thank you for your interest in contributing to Awesome Portfolio! This guide will help you add your portfolio smoothly.
 
 ## Step 1: Fork the Repository
 
