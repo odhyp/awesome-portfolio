@@ -1,6 +1,18 @@
 {{ define "main" }}
 <section class="lg:mt-8">
-  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-3">
+  <h2
+    class="text-center text-2xl leading-tight font-semibold md:text-3xl lg:text-4xl xl:text-5xl"
+  >
+    {{ .Title }}
+  </h2>
+
+  <h3
+    class="mx-auto mt-4 w-full max-w-sm text-center text-lg sm:max-w-md md:max-w-xl"
+  >
+    {{ .Description }}
+  </h3>
+
+  <div class="my-16 grid grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-3">
     <!-- PORTFOLIO LIST START -->
     {{- partial "portfolio-list.html" . -}}
     <!-- PORTFOLIO LIST END -->
