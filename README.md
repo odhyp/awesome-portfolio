@@ -23,6 +23,7 @@ A portfolio website is a great way to:
 | Parish Khan | [parish.cv](https://parish.cv/) | React, TypeScript, Tailwind CSS, Vite, Cloudflare |
 | Elliot Hu | [elliothu.me](https://elliothu.me/) | React, TypeScript, TanStack Start, Tailwind CSS, Cloudflare |
 | Dino Kupinic | [dino-kupinic.dev](https://www.dino-kupinic.dev/) | Nuxt, Vue, TypeScript, Tailwind CSS, Vercel |
+| Baqir Naqvi | [baqirnaqvi.dev](https://www.baqirnaqvi.dev/) | Next.js, React, Tailwind CSS, TypeScript, Vercel |
 <!-- portfolios:end -->
 
 ## Contribution 📖
